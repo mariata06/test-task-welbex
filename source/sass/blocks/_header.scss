@@ -1,0 +1,13 @@
+.header {
+  flex-shrink: 0;
+
+  .container {
+    background-image: url("./../img/red-ball-1.png"), url("./../img/purple-light.png"), url("./../img/purple-ball.png"), ;
+    background-position: top 75px left 353px, center top 0, right 342px top 0;
+    background-repeat: no-repeat;
+
+    @media (max-width: 767px) {
+      background-image: none;
+    }
+  }
+}

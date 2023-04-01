@@ -1,0 +1,64 @@
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: $color-solitude;
+  margin: 0;
+
+  background-color: $color-black-russian;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 575px) {
+    padding-right: 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+
+  @media (max-width: 1279px) {
+    padding: 0 24px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 16px;
+    max-width: unset;
+  }
+}
+
+a {
+  transition: opacity 0.3s ease-out;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}

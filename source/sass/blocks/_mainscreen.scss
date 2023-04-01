@@ -1,0 +1,190 @@
+.mainscreen {
+  height: 100%;
+  background-image: url("./../img/red-light.png");
+  background-position: left 0 top -180px;
+  background-repeat: no-repeat;
+  padding-top: 35px;
+  min-height: 456px;
+
+  @media (max-width: 320px) {
+    background-image: url("./../img/bg.png");
+    background-size: 100%;
+    background-position: top 0 right 0;
+    background-repeat: no-repeat;
+    min-height: 445px;
+    padding-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./../img/red-ball-2.png");
+    background-position: right 390px top 328px;
+    background-repeat: no-repeat;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 20px 16px 55px;
+
+    }
+
+    @media (max-width: 320px) {
+      background-image: none;
+    }
+  }
+
+  &__heading {
+    p {
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-size: 18px;
+      line-height: 22px;
+      width: 275px;
+
+      @media (max-width: 320px) {
+        margin-top: 0;
+      }
+    }
+
+    .mainscreen__title {
+      font-size: 48px;
+      line-height: 58px;
+      font-weight: 400;
+      width: 362px;
+      margin-top: 0;
+      margin-bottom: 32px;
+
+      @media (max-width: 767px) {
+        font-size: 36px;
+        line-height: 44px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      span {
+        background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+      }
+    }
+  }
+
+  &__benefits {
+    width: 330px;
+    text-align: right;
+    padding-top: 16px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      text-align: left;
+      padding-top: 27px;
+    }
+
+    .mainscreen__benefits-list--desktop {
+      margin-bottom: 28px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .mainscreen__benefits-list--mobile {
+      display: none;
+      @media (max-width: 767px) {
+        display: flex;
+        font-size: 13px;
+        line-height: 16px;
+
+        li {
+          position: relative;
+          padding-left: 15px;
+          width: 38%;
+          letter-spacing: 0.7px;
+          margin-bottom: 13px;
+        }
+
+        li:nth-child(even) {
+          width: 45%;
+        }
+
+        li::before {
+          content: '';
+          top: 7px;
+          left: 0;
+          position: absolute;
+          display: block;
+          width: 10px;
+          height: 1px;
+          background: linear-gradient(to right, #FCB045 50%, #FD1D1D 100%);
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      li {
+        font-family: "Montserrat", "Arial", sans-serif;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+
+        @media (max-width: 767px) {
+          font-size: 13px;
+          line-height: 16px;
+          text-transform: uppercase;
+        }
+
+        span {
+          letter-spacing: 0.8px;
+          font-family: "Inter";
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          margin-bottom: 7px;
+        }
+      }
+    }
+
+    p {
+      letter-spacing: 0.6px;
+      margin: 0;
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 22px;
+      background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%),#E4E5EA;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      @media (max-width:767px) {
+        text-transform: none;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+      }
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+
+      span {
+        font-weight: 500;
+        text-transform: lowercase;
+        background: linear-gradient(90deg, #E4E5EA 100%, #E4E5EA 100%),#E4E5EA;
+        -webkit-background-clip: text;
+      }
+    }
+
+    button {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}

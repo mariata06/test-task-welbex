@@ -1,0 +1,152 @@
+.footer-nav {
+  color: $color-solitude;
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  &__about,
+  &__menu {
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: $color-solitude;
+      text-decoration: none;
+
+      @media (max-width: 320px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  &__tel {
+    color: $color-solitude;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: block;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__address {
+    margin-top: 0;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  span {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: $color-comet;
+    font-weight: 700;
+    margin-bottom: 18px;
+    display: block;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__about {
+    width: 293px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__menu {
+    width: 425px;
+
+    @media (max-width: 767px) {
+      width: unset;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      width: 54%;
+
+      @media (max-width: 320px) {
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 320px) {
+        width: 47%;
+      }
+    }
+
+    li:nth-child(odd) {
+      width: 46%;
+
+      @media (max-width: 320px) {
+        width: 43%;
+        margin-right: 23px;
+      }
+    }
+  }
+
+  &__contacts {
+    width: 288px;
+    margin-left: auto;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      margin-left: unset;
+      width: 100%;
+      text-align: left;
+    }
+
+    span {
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+      margin-bottom: 8px;
+    }
+
+    li {
+      margin-left: 10px;
+
+      @media (max-width: 767px) {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+
+  &__copyright {
+    width: 100%;
+    min-height: 88px;
+    padding-top: 23px;
+
+    @media (max-width: 320px) {
+      padding-top: 36px;
+    }
+
+    p {
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      width: 255px;
+      margin-left: auto;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: right;
+      justify-content: flex-end;
+      margin-top: 0;
+      margin: 0;
+      margin-left: auto;
+
+      @media (max-width: 767px) {
+        justify-content: flex-start;
+        width: 100%;
+      }
+    }
+
+    a {
+      color: $color-solitude;
+      text-decoration: underline;
+      margin-top: 5px;
+    }
+  }
+}
